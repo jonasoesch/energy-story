@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Eczar');
+
+body {
+    height: 4000px;
+    font-family: "Eczar", serif;
+    background-color: #F2F2F2
+}
+
+.Chart {
+    width: 800px;
+    height: 900px;
+} 
+
+.Chart {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+.right {
+    left: 840px;
+}
+
+
+
+text {
+    font-size: 14;
+    color: #000;
+}
+
+.axis .tick line {
+    display: none;
+}
+
+.axis .tick text {
+    font-family: "Eczar", serif;
+}
+
+path {
+    /* filter: drop-shadow( 3px 3px 4px rgba(0, 0, 100, .4)); */
+}
+
+.axis .domain {
+    display: none;
+}
