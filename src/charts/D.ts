@@ -23,12 +23,13 @@ export function D():Promise<any> {
                     "name": "y",
                     "field": "share",
                     "domain": [0, 100],
-                    annotations: [{name: "Share of each energy source", offset: {left: 0, top: 0}}]
+                    annotations: [{name: "Share of each energy source"}]
                 },
                 {
                     "name": "x",
                     "field": "year",
-                    "domain": [Date.parse("2001-01-01"), Date.parse("2018-01-01")]
+                    "domain": [Date.parse("2002-01-01"), Date.parse("2017-01-01")],
+                    "ticks": d3.timeYears(new Date(2002,1,1), new Date(2017,1,1), 2)
                 },
             ],
             cast: {

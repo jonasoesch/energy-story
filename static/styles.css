@@ -6,6 +6,10 @@ body {
     background-color: #F2F2F2
 }
 
+.chart-title {
+    font-weight: 900;
+}
+
 .Chart {
     width: 800px;
     height: 900px;

@@ -23,12 +23,13 @@ export function B():Promise<any> {
                     "name": "y",
                     "field": "share",
                     "domain": [0, 100],
-                    annotations: [{name: "Share", offset: {left: 100, top: -300}}]
+                    annotations: [{name: "Share"}]
                 },
                 {
                     "name": "x",
                     "field": "year",
-                    "domain": [Date.parse("2001-01-01"), Date.parse("2018-01-01")]
+                    "domain": [Date.parse("2002-01-01"), Date.parse("2017-01-01")],
+                    "ticks": d3.timeYears(new Date(2002,1,1), new Date(2017,1,1), 2)
                 },
             ],
             cast: {
@@ -42,7 +43,7 @@ export function B():Promise<any> {
                         annotations: [{name: "Geothermal", offset: {left:0, top: -5}}]
                     } ,
                     { "name": "solar", "color": "#F4ED52",
-                        annotations: [{name: "Solar", offset: {left:0, top: -5}}]
+                        annotations: [{name: "Solar power", offset: {left:0, top: -5}}]
                     } ,
                     { "name": "wind", "color": "#69C0C9",
                         annotations: [{name: "Wind", offset: {left:0, top: -5}}]

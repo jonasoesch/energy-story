@@ -50,6 +50,9 @@ Promise.all([ A(), B(), C(), D()]).then(charts => {
             {from: "wind", to: "IL"},
             {from: "wind", to: "ND"},
             {from: "wind", to: "OK"},
+        ],
+        axes: [
+            {from: "x", to: "x"} 
         ]
     })
 
@@ -63,6 +66,9 @@ Promise.all([ A(), B(), C(), D()]).then(charts => {
             {from: "KS", to: "coal"},
             {from: "KS", to: "nuclear"},
             {from: "KS", to: "wind"},
+        ],
+        axes: [
+            {from: "x", to: "x"} 
         ]
     })
 

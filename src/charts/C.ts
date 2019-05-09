@@ -28,7 +28,8 @@ export function C():Promise<any> {
                 {
                     "name": "x",
                     "field": "year",
-                    "domain": [Date.parse("2001-01-01"), Date.parse("2018-01-01")]
+                    "domain": [Date.parse("2002-01-01"), Date.parse("2017-01-01")],
+                    "ticks": d3.timeYears(new Date(2002,1,1), new Date(2017,1,1), 2)
                 },
             ],
             cast: {
