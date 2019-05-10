@@ -2,7 +2,7 @@ import * as d3 from "d3"
 import {ChartDefinition} from "../lib/Definitions"
 import {TimeseriesChart} from "../lib/TimeseriesChart"
 
-export function C():Promise<any> {
+export function C1():Promise<any> {
     return d3.csv("../data/C.csv").then((data) => {
 
         let dd:any = data.map(d => {
@@ -13,7 +13,7 @@ export function C():Promise<any> {
             }})
 
         let definition:ChartDefinition = {
-            name: "C",
+            name: "C1",
             data: dd,
             annotations: [
                 {name: "The evolution of wind energy production in the top eight wind energy producing states",
@@ -40,29 +40,8 @@ export function C():Promise<any> {
                     "y": "y"
                 },
                 "characters": [
-                    { "name": "TX", "color": "#719BAB",
-                        annotations: [{name: "Texas"}]
-                    },
-                    { "name": "OK", "color": "#8D929A",
-                        annotations: [{name: "Oklahoma"}]
-                    },
-                    { "name": "IA", "color": "#696AB7",
-                        annotations: [{name: "Iowa"}]
-                    },
                     { "name": "KS", "color": "#332157",
                         annotations: [{name: "Kansas"}]
-                    },
-                    { "name": "CA", "color": "#A45FC2",
-                        annotations: [{name: "California", offset: {top: -10}}]
-                    },
-                    { "name": "IL", "color": "#C859C2",
-                        annotations: [{name: "Illinois", offset: {top: -1}}]
-                    },
-                    { "name": "ND", "color": "#D44C6C",
-                        annotations: [{name: "North Dakota", offset: {top: 3}}]
-                    },
-                    { "name": "MN", "color": "#861759",
-                        annotations: [{name: "Minnesota", offset: {top: 15}}]
                     },
                 ]
             },

@@ -16,14 +16,14 @@ export function B():Promise<any> {
             name: "B",
             data: dd,
             annotations: [
-                {name: "The share of each energy source"}
+                {name: "The share of each energy source", offset: {left: -5}}
             ],
             axes: [
                 {
                     "name": "y",
                     "field": "share",
                     "domain": [0, 100],
-                    annotations: [{name: "Share"}]
+                    annotations: [{name: "Share of each energy source", offset: {top: -30, left: 0}}]
                 },
                 {
                     "name": "x",
@@ -40,40 +40,64 @@ export function B():Promise<any> {
                 },
                 "characters": [
                     { "name": "geothermal", "color": "#F4BE52",
-                        annotations: [{name: "Geothermal", offset: {left:0, top: -5}}]
+                        annotations: [
+                            {name: "Geothermal", offset: {left:0, top: -5}, class: "outside"}
+                        ]
                     } ,
                     { "name": "solar", "color": "#F4ED52",
-                        annotations: [{name: "Solar power", offset: {left:0, top: -5}}]
+                        annotations: [{name: "Solar power", offset: {left:0, top: -13}, class: "outside"}]
                     } ,
                     { "name": "wind", "color": "#69C0C9",
-                        annotations: [{name: "Wind", offset: {left:0, top: -5}}]
+                        annotations: [
+                            {name: "Wind", offset: {left:0, top: -10}, class: "outside"},
+                            {name: "3%", anchor: "end", offset: {left:-50, top: 5}, class: "wind"}
+                        ]
                     } ,
                     { "name": "hydro", "color": "#4E9CA4",
-                        annotations: [{name: "Hydropower", offset: {left:0, top: -5}}]
+                        annotations: [
+                        {name: "Hydropower", offset: {top: -6}},
+                        {name: "3%", anchor: "start", offset: {left:20, top: 5}, class: "hydro"},
+                        {name: "3%", anchor: "end", offset: {left:-50, top: 10}, class: "hydro"}
+                        ]
                     } ,
                     { "name": "biomass", "color": "#53A353",
-                        annotations: [{name: "Biomass", offset: {left:0, top: -5}}]
+                        annotations: [
+                        {name: "Biomass", offset: {top: 10}},
+                        {name: "3%", anchor: "start", offset: {left:20, top: 5}, class: "biomass"},
+                        {name: "6%", anchor: "end", offset: {left:-50, top: 20}, class: "biomass"}
+                        ]
                     },
                     { "name": "nuclear", "color": "#9AA353",
-                        annotations: [{name: "Nuclear", offset: {left:0, top: -5}}]
+                        annotations: [
+                        {name: "Nuclear", offset: {top: 30}},
+                        {name: "11%", anchor: "start", offset: {left:20, top: 30}, class: "nuclear"},
+                        {name: "9%", anchor: "end", offset: {left:-50, top: 30}, class: "nuclear"}
+                        ]
                     } ,
                     { "name": "coal", "color": "#A47351",
                     annotations: [
-                        {name: "Coal", offset: {left:0, top: -5}}
+                        {name: "Coal", offset: {top: 50}},
+                        {name: "33%", anchor: "start", offset: {left:20, top: 90}, class: "coal"},
+                        {name: "18%", anchor: "end", offset: {left:-50, top: 50}, class: "coal"}
                     ]
                     } ,
                     { "name": "crude oil", "color": "#724E3E", 
                     annotations: [
-                        {name: "Oil", offset: {left:0, top: -5}}
+                        {name: "Oil", offset: {top: 60}},
+                        {name: "17%", anchor: "start", offset: {left:20, top: 50}, class: "oil"},
+                        {name: "24%", anchor: "end", offset: {left:-50, top: 60}, class: "oil"}
                     ]
                     } ,
                     { "name": "natural gas", "color": "#969696",
                     annotations: [
-                        {name: "Natural gas", offset: {left:0, top: -5}}
+                        {name: "Natural gas", offset: {top: 80}},
+                        {name: "31%", anchor: "start", offset: {left:20, top: 80}, class: "gas"},
+                        {name: "38%", anchor: "end", offset: {left:-50, top: 85}, class: "gas"}
                     ]
                     } ,
                 ]
-            }
+            },
+            design: {font: {family: "Eczar", size: 16}, margin: {top: 200, right: 100}}
         }
         return new StackedTimeseriesChart(definition)
     })

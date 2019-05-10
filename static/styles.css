@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Eczar');
+@import url('https://fonts.googleapis.com/css?family=Eczar:400,500,600,700,800');
 
 body {
     height: 4000px;
@@ -7,13 +7,20 @@ body {
 }
 
 .chart-title {
-    font-weight: 900;
+    font-weight: 600;
 }
 
 .Chart {
     width: 800px;
     height: 900px;
 } 
+
+.axis-label {
+    font-family: "Eczar", serif;
+    font-size: 16px;
+    font-weight: 500;
+    fill: #666;
+}
 
 .Chart {
     position: fixed;
@@ -47,3 +54,61 @@ path {
 .axis .domain {
     display: none;
 }
+
+#B #axis-y .tick {
+    display: none;
+}
+
+
+#B1 #axis-y .tick {
+    display: none;
+}
+
+#B .character .gas {
+    font-weight: 600;
+    fill: #fff;
+}
+
+#B .character .oil {
+    font-weight: 600;
+    fill: #fff;
+}
+
+#B .character .coal {
+    font-weight: 600;
+    fill: #fff;
+}
+
+#B .character .nuclear {
+    font-weight: 600;
+    fill: #fff;
+}
+
+#B .character .biomass {
+    font-weight: 600;
+    fill: #fff;
+}
+
+
+#B .character .hydro {
+    font-weight: 600;
+    fill: #fff;
+}
+
+
+#B .character .wind {
+    font-weight: 600;
+    fill: #fff;
+}
+
+#D .character .percent {
+    font-weight: 600;
+    fill: #fff;
+    letter-spacing: 1px;
+}
+
+#D #axis-y .tick {
+    display: none;
+}
+
+
