@@ -16,7 +16,7 @@ export function B():Promise<any> {
             name: "B",
             data: dd,
             annotations: [
-                {name: "The share of each energy source", offset: {left: -5}}
+                {name: "How the ratios of the different energy sources have changed over time", offset: {left: -5}}
             ],
             axes: [
                 {

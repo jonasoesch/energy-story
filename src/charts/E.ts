@@ -16,7 +16,7 @@ export function E():Promise<any> {
             name: "E",
             data: dd,
             annotations: [
-                {name: "How much energy was produced in Kansas for different sources over the years", offset: {left: -50}}
+                {name: "Energy produced by source in the state of Kansas over the years", offset: {left: -50}}
             ],
             axes: [
                 {

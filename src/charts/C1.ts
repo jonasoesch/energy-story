@@ -24,7 +24,7 @@ export function C1():Promise<any> {
                     "name": "y",
                     "field": "energy",
                     "domain": [0, 250],
-                    annotations: [{name: "Wind energy production in Billion BTU", offset: {left: 8, top: 0}}]
+                    annotations: [{name: "Wind energy production in billion BTU", offset: {left: 8, top: 0}}]
                 },
                 {
                     "name": "x",

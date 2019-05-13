@@ -16,7 +16,7 @@ export function D():Promise<any> {
             name: "D",
             data: dd,
             annotations: [
-                {name: "Change in energy production in the state of Kansas", offset: {left: 0}}
+                {name: "How the share of different energy sources has changed in the state of Kansas", offset: {left: 0}}
             ],
             axes: [
                 {
@@ -54,6 +54,7 @@ export function D():Promise<any> {
                     ]},
                     { "name": "wind", "color": "#69C0C9", annotations: [
                         {name: "Wind"},
+                        {name: "1%", anchor: "start", offset: {left: 20, top: 3}, class: "percent"},
                         {name: "36%", anchor: "end", offset: {left: -50, top: 140}, class: "percent"},
                     ]},
                     { "name": "coal", "color": "#A47351", annotations: [
