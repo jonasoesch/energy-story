@@ -23,7 +23,7 @@ export function B1():Promise<any> {
                     "name": "y",
                     "field": "share",
                     "domain": [0, 100],
-                    annotations: [{name: "Share of each energy source", offset: {top: -30, left: 0}}]
+                    annotations: [{name: "Share of each energy source", offset: {top: -40, left: 0}}]
                 },
                 {
                     "name": "x",
@@ -39,6 +39,8 @@ export function B1():Promise<any> {
                     "y": "y"
                 },
                 "characters": [
+                    {name: "geothermal", color: "transparent"},
+                    {name: "solar", color: "transparent"},
                     { "name": "wind", "color": "#69C0C9",
                         annotations: [
                             {name: "Wind", offset: {left:0, top: -10}, class: "outside"},
@@ -46,7 +48,7 @@ export function B1():Promise<any> {
                     } ,
                 ]
             },
-            design: {font: {family: "Eczar", size: 16}, margin: {top: 200, right: 100}}
+            design: {font: {family: "Eczar", size: 13}, margin: {top: 160, right: 100}}
         }
         return new StackedTimeseriesChart(definition)
     })

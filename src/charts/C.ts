@@ -66,7 +66,7 @@ export function C():Promise<any> {
                     },
                 ]
             },
-            design: {font: {family: "Eczar", size: 16}, margin: {top: 200, right: 100}}
+            design: {font: {family: "Eczar", size: 13}, margin: {top: 160, right: 100}}
         }
         return new TimeseriesChart(definition)
     })

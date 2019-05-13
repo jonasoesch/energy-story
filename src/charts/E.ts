@@ -16,14 +16,14 @@ export function E():Promise<any> {
             name: "E",
             data: dd,
             annotations: [
-                {name: "Energy produced by source in the state of Kansas over the years", offset: {left: -50}}
+                {name: "Energy produced by source in the state of Kansas over the years", offset: {top: -3, left: -30}}
             ],
             axes: [
                 {
                     "name": "y",
                     "field": "energy",
                     "domain": [0, 150],
-                    annotations: [{name: "Energy production in billion BTU", offset: {left: -10, top: -10}}]
+                    annotations: [{name: "Energy production in billion BTU", offset: {left: 10, top: 10}}]
                 },
                 {
                     "name": "x",
@@ -56,7 +56,7 @@ export function E():Promise<any> {
                     },
                 ]
             },
-            design: {font: {family: "Eczar", size: 16}, margin: {top: 200, right: 100}}
+            design: {font: {family: "Eczar", size: 13}, margin: {top: 160, right: 100}}
         }
         return new TimeseriesChart(definition)
     })

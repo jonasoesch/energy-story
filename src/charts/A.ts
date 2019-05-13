@@ -23,7 +23,7 @@ export function A():Promise<any> {
                     "name": "y",
                     "field": "energy",
                     "domain": [0, 40000],
-                    annotations: [{name: "Energy production in billion BTU", offset: {left: -10, top: -10}}]
+                    annotations: [{name: "Energy production in billion BTU", offset: {left: -10, top: 0}}]
                 },
                 {
                     "name": "x",
@@ -49,7 +49,7 @@ export function A():Promise<any> {
                         annotations: [{"name": "Oil"}]
                     },
                     { "name": "geothermal", "color": "#F4BE52",
-                        annotations: [{"name": "Geothermal"}]
+                        annotations: [{"name": "Geothermal", offset: {top: 3}}]
                     },
                     { "name": "hydro", "color": "#4E9CA4",
                         annotations: [{"name": "Hydropower", offset: {top: -8}}]
@@ -64,11 +64,11 @@ export function A():Promise<any> {
                         annotations: [{"name": "Solar power", offset: {top: -3}}]
                     },
                     { "name": "wind", "color": "#69C0C9",
-                        annotations: [{"name": "Wind", offset: {top: 6}}]
+                        annotations: [{"name": "Wind", offset: {top: 0}}]
                     },
                 ]
             },
-            design: {font: {family: "Eczar", size: 16}, margin: {top: 200, right: 100}}
+            design: {font: {family: "Eczar", size: 13}, margin: {top: 160, right: 100}}
         }
         return new TimeseriesChart(definition)
     })
