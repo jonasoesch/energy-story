@@ -17,11 +17,15 @@ Promise.all([C(), C1(), D()]).then(charts => {
         from: C1,
         to: D,
         characters: [
-            {from: "KS", to: "natural gas"},
-            {from: "KS", to: "crude oil"},
-            {from: "KS", to: "coal"},
-            {from: "KS", to: "nuclear"},
-            {from: "KS", to: "wind"},
+            {from: "CA", to: "solar"},
+            {from: "CA", to: "biomass"},
+            {from: "CA", to: "geothermal"},
+            {from: "CA", to: "natural gas"},
+            {from: "CA", to: "crude oil"},
+            {from: "CA", to: "coal"},
+            {from: "CA", to: "nuclear"},
+            {from: "CA", to: "hydro"},
+            {from: "CA", to: "wind"},
         ],
         axes: [
             {from: "x", to: "x"} 

@@ -40,8 +40,8 @@ export function C1():Promise<any> {
                     "y": "y"
                 },
                 "characters": [
-                    { "name": "KS", "color": "#332157",
-                        annotations: [{name: "Kansas"}]
+                    { "name": "CA", "color": "#A45FC2",
+                        annotations: [{name: "California", offset: {top: -10}}]
                     },
                 ]
             },

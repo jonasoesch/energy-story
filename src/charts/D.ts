@@ -16,7 +16,7 @@ export function D():Promise<any> {
             name: "D",
             data: dd,
             annotations: [
-                {name: "How the share of different energy sources has changed in the state of Kansas", offset: {left: 0}}
+                {name: "How the share of different energy sources has changed in California", offset: {left: 0}}
             ],
             axes: [
                 {
@@ -38,29 +38,47 @@ export function D():Promise<any> {
                     "x": "x",
                     "y": "y"
                 },
+
                 "characters": [
                     { "name": "crude oil", "color": "#724E3E", annotations: [
-                        {name: "Oil", offset: {top: -8}}
+                        {name: "Oil", offset: {top: 0, left: 10}}
                     ]},
-                    { "name": "natural gas", "color": "#969696", annotations: [
-                        {name: "Natural gas", offset: {top: -5}},
-                        {name: "4%", anchor: "start", offset: {left: 20, top: 5}, class: "percent"},
-                        {name: "4%", anchor: "end", offset: {left: -50, top: 5}, class: "percent"},
+                    { "name": "coal", "color": "#A47351", annotations: [
+                        {name: "Coal", offset: {top: -10}},
+                    ]},
+                    { "name": "biomass", "color": "#53A353", annotations: [
+                        {name: "Biomass", offset: {top: -8}},
+                        {name: "3%", anchor: "start", offset: {left: 20, top: 2}, class: "percent"},
+                        {name: "3%", anchor: "end", offset: {left: -50, top: 1}, class: "percent"},
+                    ]},
+                    { "name": "geothermal", "color": "#F4BE52", annotations: [
+                        {name: "Geothermal", offset: {top: 4}},
+                        {name: "7%", anchor: "start", offset: {left: 20, top: 12}, class: "percent"},
+                        {name: "5%", anchor: "end", offset: {left: -50, top: 8}, class: "percent"},
+                    ]},
+                    { "name": "wind", "color": "#69C0C9", annotations: [
+                        {name: "Wind", offset: {top: 10}},
+                        {name: "2%", anchor: "start", offset: {left: 20, top: 2}, class: "percent"},
+                        {name: "6%", anchor: "end", offset: {left: -50, top: 8}, class: "percent"},
                     ]},
                     { "name": "nuclear", "color": "#9AA353", annotations: [
                         {name: "Nuclear"},
-                        {name: "19%", anchor: "start", offset: {left: 20, top: 60}, class: "percent"},
-                        {name: "21%", anchor: "end", offset: {left: -50, top: 60}, class: "percent"},
+                        {name: "19%", anchor: "start", offset: {left: 20, top: 50}, class: "percent"},
+                        {name: "9%", anchor: "end", offset: {left: -50, top: 10}, class: "percent"},
                     ]},
-                    { "name": "wind", "color": "#69C0C9", annotations: [
-                        {name: "Wind"},
-                        {name: "1%", anchor: "start", offset: {left: 20, top: 3}, class: "percent"},
-                        {name: "36%", anchor: "end", offset: {left: -50, top: 140}, class: "percent"},
+                    { "name": "solar", "color": "#F4ED52", annotations: [
+                        {name: "Solar power", offset: {top: 10}},
+                        {name: "12%", anchor: "end", offset: {left: -50, top: 20}, class: "percent"},
                     ]},
-                    { "name": "coal", "color": "#A47351", annotations: [
-                        {name: "Coal"},
-                        {name: "75%", anchor: "start", offset: {left: 20, top: 200}, class: "percent"},
-                        {name: "38%", anchor: "end", offset: {left: -50, top: 100}, class: "percent"},
+                    { "name": "hydro", "color": "#4E9CA4", annotations: [
+                        {name: "Hydropower", offset: {top: 40}},
+                        {name: "17%", anchor: "start", offset: {left: 20, top: 40}, class: "percent"},
+                        {name: "21%", anchor: "end", offset: {left: -50, top: 70}, class: "percent"},
+                    ]},
+                    { "name": "natural gas", "color": "#969696", annotations: [
+                        {name: "Natural gas", offset: {top: 120}},
+                        {name: "49%", anchor: "start", offset: {left: 20, top: 120}, class: "percent"},
+                        {name: "44%", anchor: "end", offset: {left: -50, top: 120}, class: "percent"},
                     ]},
                 ]
             },

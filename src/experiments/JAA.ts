@@ -3,6 +3,7 @@ import {B} from "../charts/B"
 import {JuxtaposedDirector} from "../lib/Director"
 import {StepDefinition} from "../lib/Definitions"
 import {MorphingChart} from "../lib/MorphingChart"
+import {Form} from "../lib/Form"
 
 Promise.all([ A(), B()]).then(charts => {
 
@@ -30,12 +31,22 @@ Promise.all([ A(), B()]).then(charts => {
         ]
     })
 
+    let f = new Form({
+        name: "form",
+        nextPage: "http://google.com",
+        questions: [
+            {question: "In your opinion, what effect or relationship is shown in the data mini-story?",
+             kind: "text", name: "first"} 
+        ],
+    })
+
 
 
     let steps:StepDefinition[] = [
         {from: -1000, to:100, draw:A},
         {from: 100, to:900, draw:AB},
         {from: 900, to:10000, draw:B},
+        {from: 1100, to:10000, draw:f},
     ]
     new JuxtaposedDirector(steps)
          

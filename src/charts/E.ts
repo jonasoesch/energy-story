@@ -22,7 +22,7 @@ export function E():Promise<any> {
                 {
                     "name": "y",
                     "field": "energy",
-                    "domain": [0, 150],
+                    "domain": [0, 450],
                     annotations: [{name: "Energy production in billion BTU", offset: {left: 10, top: 10}}]
                 },
                 {
@@ -39,20 +39,32 @@ export function E():Promise<any> {
                     "y": "y"
                 },
                 "characters": [
-                    { "name": "coal", "color": "#A47351",
-                        annotations: [{"name": "Coal"}]
+                    { "name": "crude oil", "color": "#724E3E",
+                        annotations: [{"name": "Oil", offset: {top: 3, left: 10}}]
                     },
-                    { "name": "natural gas", "color": "#969696",
-                        annotations: [{"name": "Natural gas"}]
+                    { "name": "coal", "color": "#A47351",
+                        annotations: [{"name": "Coal", offset: {top: -8}}]
+                    },
+                    { "name": "biomass", "color": "#53A353",
+                        annotations: [{"name": "Biomass"}]
+                    },
+                    { "name": "geothermal", "color": "#F4BE52",
+                        annotations: [{"name": "Geothermal", offset: {top: 3}}]
+                    },
+                    { "name": "wind", "color": "#69C0C9",
+                        annotations: [{"name": "Wind", offset: {top: -3}}]
                     },
                     { "name": "nuclear", "color": "#9AA353",
                         annotations: [{"name": "Nuclear"}]
                     },
-                    { "name": "wind", "color": "#69C0C9",
-                        annotations: [{"name": "Wind", offset: {top: 6}}]
+                    { "name": "solar", "color": "#F4ED52",
+                        annotations: [{"name": "Solar power"}]
                     },
-                    { "name": "crude oil", "color": "#724E3E",
-                        annotations: [{"name": "Oil", offset: {top: -5}}]
+                    { "name": "hydro", "color": "#4E9CA4",
+                        annotations: [{"name": "Hydropower"}]
+                    },
+                    { "name": "natural gas", "color": "#969696",
+                        annotations: [{"name": "Natural gas"}]
                     },
                 ]
             },
