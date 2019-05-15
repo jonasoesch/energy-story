@@ -46,8 +46,8 @@ Promise.all([ A(), B()]).then(charts => {
         {from: -1000, to:100, draw:A},
         {from: 100, to:900, draw:AB},
         {from: 900, to:10000, draw:B},
-        {from: 1100, to:10000, draw:f},
     ]
+    f.draw()
     new JuxtaposedDirector(steps)
          
 })
