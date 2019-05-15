@@ -3,6 +3,7 @@ import {B} from "../charts/B"
 import {SuperposedDirector} from "../lib/Director"
 import {StepDefinition} from "../lib/Definitions"
 import {MorphingChart} from "../lib/MorphingChart"
+import {Form} from "../lib/Form"
 
 Promise.all([ A(), B()]).then(charts => {
 
@@ -36,7 +37,18 @@ Promise.all([ A(), B()]).then(charts => {
         {from: 100, to:900, draw:AB},
         {from: 900, to:10000, draw:B},
     ]
-    new SuperposedDirector(steps)
+    let d = new SuperposedDirector(steps)
+    let f = new Form({
+        name: "form",
+        nextPage: "http://google.com",
+        logger: d.logger,
+        top: 1100,
+        questions: [
+            {question: "In your opinion, what effect or relationship is shown in the data mini-story?",
+             kind: "text", name: "first"} 
+        ],
+    })
+    f.draw()
          
 })
 

@@ -31,14 +31,6 @@ Promise.all([ A(), B()]).then(charts => {
         ]
     })
 
-    let f = new Form({
-        name: "form",
-        nextPage: "http://google.com",
-        questions: [
-            {question: "In your opinion, what effect or relationship is shown in the data mini-story?",
-             kind: "text", name: "first"} 
-        ],
-    })
 
 
 
@@ -47,7 +39,18 @@ Promise.all([ A(), B()]).then(charts => {
         {from: 100, to:900, draw:AB},
         {from: 900, to:10000, draw:B},
     ]
+    let d = new JuxtaposedDirector(steps)
+
+    let f = new Form({
+        name: "form",
+        nextPage: "http://google.com",
+        logger: d.logger,
+        top: 1110,
+        questions: [
+            {question: "In your opinion, what effect or relationship is shown in the data mini-story?",
+             kind: "text", name: "first"} 
+        ],
+    })
     f.draw()
-    new JuxtaposedDirector(steps)
          
 })
