@@ -42,7 +42,7 @@ Promise.all([C(), C1(), D()]).then(charts => {
     let d = new SuperposedDirector(steps)
     let f = new Form({
         name: "form",
-        nextPage: "http://google.com",
+        nextPage: "https://www.cs.technik.fhnw.ch/lostintransition/",
         logger: d.logger,
         top: 1100,
         questions: [

@@ -18,7 +18,7 @@ Promise.all([D(), E()]).then(charts => {
 
     let f = new Form({
         name: "form",
-        nextPage: "http://google.com",
+        nextPage: "https://www.cs.technik.fhnw.ch/lostintransition/",
         logger: d.logger,
         top: 0,
         questions: [
