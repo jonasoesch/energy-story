@@ -3,12 +3,12 @@ import {ChartDefinition} from "../lib/Definitions"
 import {TimeseriesChart} from "../lib/TimeseriesChart"
 
 export function E():Promise<any> {
-    return d3.csv("../data/E.csv").then((data) => {
+    return d3.csv("../data/lcoe.csv").then((data) => {
 
         let dd:any = data.map(d => {
             return {
                 year: new Date(Date.parse(d.year)),
-                energy: parseFloat(d.energy),
+                lcoe: parseFloat(d.lcoe),
                 source: d.source
             }})
 
@@ -16,14 +16,14 @@ export function E():Promise<any> {
             name: "E",
             data: dd,
             annotations: [
-                {name: "Energy produced by source in California over the years", offset: {top: -3, left: -30}}
+                {name: "Evolution of the price of different energy sources", offset: {top: -3, left: -30}}
             ],
             axes: [
                 {
                     "name": "y",
-                    "field": "energy",
-                    "domain": [0, 450],
-                    annotations: [{name: "Energy production in billion BTU", offset: {left: 10, top: 10}}]
+                    "field": "lcoe",
+                    "domain": [0, 180],
+                    annotations: [{name: "USD per million BTU", offset: {left: 10, top: 10}}]
                 },
                 {
                     "name": "x",
@@ -39,29 +39,17 @@ export function E():Promise<any> {
                     "y": "y"
                 },
                 "characters": [
-                    { "name": "crude oil", "color": "#724E3E",
-                        annotations: [{"name": "Oil", offset: {top: 3, left: 10}}]
-                    },
                     { "name": "coal", "color": "#A47351",
                         annotations: [{"name": "Coal", offset: {top: -8}}]
                     },
-                    { "name": "biomass", "color": "#53A353",
-                        annotations: [{"name": "Biomass"}]
-                    },
-                    { "name": "geothermal", "color": "#F4BE52",
-                        annotations: [{"name": "Geothermal", offset: {top: 3}}]
-                    },
                     { "name": "wind", "color": "#69C0C9",
-                        annotations: [{"name": "Wind", offset: {top: -3}}]
+                        annotations: [{"name": "Wind", offset: {top: 10}}]
                     },
                     { "name": "nuclear", "color": "#9AA353",
                         annotations: [{"name": "Nuclear"}]
                     },
                     { "name": "solar", "color": "#F4ED52",
-                        annotations: [{"name": "Solar power"}]
-                    },
-                    { "name": "hydro", "color": "#4E9CA4",
-                        annotations: [{"name": "Hydropower"}]
+                        annotations: [{"name": "Solar power", offset: {top: 3}}]
                     },
                     { "name": "natural gas", "color": "#969696",
                         annotations: [{"name": "Natural gas"}]

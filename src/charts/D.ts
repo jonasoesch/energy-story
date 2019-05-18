@@ -40,12 +40,6 @@ export function D():Promise<any> {
                 },
 
                 "characters": [
-                    { "name": "crude oil", "color": "#724E3E", annotations: [
-                        {name: "Oil", offset: {top: 0, left: 10}}
-                    ]},
-                    { "name": "coal", "color": "#A47351", annotations: [
-                        {name: "Coal", offset: {top: -10}},
-                    ]},
                     { "name": "biomass", "color": "#53A353", annotations: [
                         {name: "Biomass", offset: {top: -8}},
                         {name: "3%", anchor: "start", offset: {left: 20, top: 2}, class: "percent"},
@@ -61,15 +55,6 @@ export function D():Promise<any> {
                         {name: "2%", anchor: "start", offset: {left: 20, top: 2}, class: "percent"},
                         {name: "6%", anchor: "end", offset: {left: -50, top: 8}, class: "percent"},
                     ]},
-                    { "name": "nuclear", "color": "#9AA353", annotations: [
-                        {name: "Nuclear"},
-                        {name: "19%", anchor: "start", offset: {left: 20, top: 50}, class: "percent"},
-                        {name: "9%", anchor: "end", offset: {left: -50, top: 10}, class: "percent"},
-                    ]},
-                    { "name": "solar", "color": "#F4ED52", annotations: [
-                        {name: "Solar power", offset: {top: 10}},
-                        {name: "12%", anchor: "end", offset: {left: -50, top: 20}, class: "percent"},
-                    ]},
                     { "name": "hydro", "color": "#4E9CA4", annotations: [
                         {name: "Hydropower", offset: {top: 40}},
                         {name: "17%", anchor: "start", offset: {left: 20, top: 40}, class: "percent"},
@@ -79,6 +64,21 @@ export function D():Promise<any> {
                         {name: "Natural gas", offset: {top: 120}},
                         {name: "49%", anchor: "start", offset: {left: 20, top: 120}, class: "percent"},
                         {name: "44%", anchor: "end", offset: {left: -50, top: 120}, class: "percent"},
+                    ]},
+                    { "name": "crude oil", "color": "#724E3E", annotations: [
+                        {name: "Oil", offset: {top: 10, left: 0}}
+                    ]},
+                    { "name": "coal", "color": "#A47351", annotations: [
+                        {name: "Coal", offset: {top: -10}},
+                    ]},
+                    { "name": "nuclear", "color": "#9AA353", annotations: [
+                        {name: "Nuclear"},
+                        {name: "19%", anchor: "start", offset: {left: 20, top: 50}, class: "percent"},
+                        {name: "9%", anchor: "end", offset: {left: -50, top: 10}, class: "percent"},
+                    ]},
+                    { "name": "solar", "color": "#F4ED52", annotations: [
+                        {name: "Solar power", offset: {top: 10}},
+                        {name: "12%", anchor: "end", offset: {left: -50, top: 20}, class: "percent"},
                     ]},
                 ]
             },

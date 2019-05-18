@@ -89,13 +89,9 @@ Promise.all([ A(), B(), B1(), C(), C1(), D(), E()]).then(charts => {
         to: E,
         characters: [
             {from: "solar", to: "solar"},
-            {from: "biomass", to: "biomass"},
-            {from: "geothermal", to: "geothermal"},
             {from: "natural gas", to: "natural gas"},
-            {from: "crude oil", to: "crude oil"},
             {from: "coal", to: "coal"},
             {from: "nuclear", to: "nuclear"},
-            {from: "hydro", to: "hydro"},
             {from: "wind", to: "wind"},
         ],
         axes: [
