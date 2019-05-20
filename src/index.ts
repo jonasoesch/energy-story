@@ -112,6 +112,6 @@ Promise.all([ A(), B(), B1(), C(), C1(), D(), E()]).then(charts => {
         {from: 1600, to:1800, draw:DE},
         {from: 1800, to:4100, draw:E},
     ]
-    new SuperposedDirector(steps)
+    new SuperposedDirector(steps, "Edemo")
          
 })

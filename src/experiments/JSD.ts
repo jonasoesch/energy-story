@@ -14,11 +14,11 @@ Promise.all([D(), E()]).then(charts => {
         {from: -1000, to:10000, draw:D},
         {from: -1000, to:10000, draw:E},
     ]
-    let d = new JuxtaposedDirector(steps)
+    let d = new JuxtaposedDirector(steps, "EJSD")
 
     let f = new Form({
         name: "form",
-        nextPage: "https://www.cs.technik.fhnw.ch/lostintransition/",
+        currentPage: d.name,
         logger: d.logger,
         top: 0,
         questions: [

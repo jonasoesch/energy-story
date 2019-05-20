@@ -40,10 +40,10 @@ Promise.all([ B(), B1(), C()]).then(charts => {
         {from: 400, to:900, draw:BC},
         {from: 900, to:10000, draw:C},
     ]
-    let d = new SuperposedDirector(steps)
+    let d = new SuperposedDirector(steps, "ESAB")
     let f = new Form({
         name: "form",
-        nextPage: "https://www.cs.technik.fhnw.ch/lostintransition/",
+        currentPage: d.name,
         logger: d.logger,
         top: 1100,
         questions: [
