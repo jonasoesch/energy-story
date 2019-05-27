@@ -44,6 +44,11 @@ text {
     font-family: "Eczar", serif;
 }
 
+
+.axis .tick line {
+    stroke: #fff;
+}
+
 path {
     /* filter: drop-shadow( 3px 3px 4px rgba(0, 0, 100, .4)); */
 }
