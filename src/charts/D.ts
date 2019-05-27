@@ -45,7 +45,7 @@ export function D():Promise<any> {
                         {name: "3%", anchor: "start", offset: {left: 20, top: 2}, class: "percent"},
                         {name: "3%", anchor: "end", offset: {left: -50, top: 1}, class: "percent"},
                     ]},
-                    { "name": "geothermal", "color": "#F4BE52", annotations: [
+                    { "name": "geothermal", "color": "#EA7A00", annotations: [
                         {name: "Geothermal", offset: {top: 4}},
                         {name: "7%", anchor: "start", offset: {left: 20, top: 12}, class: "percent"},
                         {name: "5%", anchor: "end", offset: {left: -50, top: 8}, class: "percent"},
@@ -76,7 +76,7 @@ export function D():Promise<any> {
                         {name: "19%", anchor: "start", offset: {left: 20, top: 50}, class: "percent"},
                         {name: "9%", anchor: "end", offset: {left: -50, top: 10}, class: "percent"},
                     ]},
-                    { "name": "solar", "color": "#F4ED52", annotations: [
+                    { "name": "solar", "color": "#E0A317", annotations: [
                         {name: "Solar power", offset: {top: 10}},
                         {name: "12%", anchor: "end", offset: {left: -50, top: 20}, class: "percent"},
                     ]},

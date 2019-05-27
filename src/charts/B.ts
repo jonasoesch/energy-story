@@ -39,12 +39,12 @@ export function B():Promise<any> {
                     "y": "y"
                 },
                 "characters": [
-                    { "name": "geothermal", "color": "#F4BE52",
+                    { "name": "geothermal", "color": "#EA7A00",
                         annotations: [
                             {name: "Geothermal", offset: {left:0, top: -5}, class: "outside"}
                         ]
                     } ,
-                    { "name": "solar", "color": "#F4ED52",
+                    { "name": "solar", "color": "#E0A317",
                         annotations: [{name: "Solar power", offset: {left:0, top: -11}, class: "outside"}]
                     } ,
                     { "name": "wind", "color": "#69C0C9",
