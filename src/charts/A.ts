@@ -51,7 +51,7 @@ export function A():Promise<any> {
                     { "name": "geothermal", "color": "#EA7A00",
                         annotations: [{"name": "Geothermal", offset: {top: 3}}]
                     },
-                    { "name": "hydro", "color": "#4E9CA4",
+                    { "name": "hydro", "color": "#007B88",
                         annotations: [{"name": "Hydropower", offset: {top: -8}}]
                     },
                     { "name": "natural gas", "color": "#969696",
@@ -63,7 +63,7 @@ export function A():Promise<any> {
                     { "name": "solar", "color": "#E0A317",
                         annotations: [{"name": "Solar power", offset: {top: -3}}]
                     },
-                    { "name": "wind", "color": "#69C0C9",
+                    { "name": "wind", "color": "#61A8B0",
                         annotations: [{"name": "Wind", offset: {top: 0}}]
                     },
                 ]

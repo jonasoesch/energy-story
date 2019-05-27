@@ -50,12 +50,12 @@ export function D():Promise<any> {
                         {name: "7%", anchor: "start", offset: {left: 20, top: 12}, class: "percent"},
                         {name: "5%", anchor: "end", offset: {left: -50, top: 8}, class: "percent"},
                     ]},
-                    { "name": "wind", "color": "#69C0C9", annotations: [
+                    { "name": "wind", "color": "#61A8B0", annotations: [
                         {name: "Wind", offset: {top: 10}},
                         {name: "2%", anchor: "start", offset: {left: 20, top: 2}, class: "percent"},
                         {name: "6%", anchor: "end", offset: {left: -50, top: 8}, class: "percent"},
                     ]},
-                    { "name": "hydro", "color": "#4E9CA4", annotations: [
+                    { "name": "hydro", "color": "#007B88", annotations: [
                         {name: "Hydropower", offset: {top: 40}},
                         {name: "17%", anchor: "start", offset: {left: 20, top: 40}, class: "percent"},
                         {name: "21%", anchor: "end", offset: {left: -50, top: 70}, class: "percent"},

@@ -47,13 +47,13 @@ export function B():Promise<any> {
                     { "name": "solar", "color": "#E0A317",
                         annotations: [{name: "Solar power", offset: {left:0, top: -11}, class: "outside"}]
                     } ,
-                    { "name": "wind", "color": "#69C0C9",
+                    { "name": "wind", "color": "#61A8B0",
                         annotations: [
                             {name: "Wind", offset: {left:0, top: -10}, class: "outside"},
                             {name: "3%", anchor: "end", offset: {left:-50, top: 5}, class: "wind"}
                         ]
                     } ,
-                    { "name": "hydro", "color": "#4E9CA4",
+                    { "name": "hydro", "color": "#007B88",
                         annotations: [
                         {name: "Hydropower", offset: {top: -6}},
                         {name: "3%", anchor: "start", offset: {left:20, top: 5}, class: "hydro"},

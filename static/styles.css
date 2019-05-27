@@ -46,7 +46,7 @@ text {
 
 
 .axis .tick line {
-    stroke: #fff;
+    stroke: #ccc;
 }
 
 path {

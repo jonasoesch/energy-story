@@ -42,7 +42,7 @@ export function E():Promise<any> {
                     { "name": "coal", "color": "#A47351",
                         annotations: [{"name": "Coal", offset: {top: -8}}]
                     },
-                    { "name": "wind", "color": "#69C0C9",
+                    { "name": "wind", "color": "#61A8B0",
                         annotations: [{"name": "Wind", offset: {top: 10}}]
                     },
                     { "name": "nuclear", "color": "#9AA353",
