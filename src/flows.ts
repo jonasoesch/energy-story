@@ -46,8 +46,10 @@ export const urlmap = {
 
 
 export const flows = {
-    "subjType1": ["MSAD", "MSAA", "MSAR", "MSAC", "EJAA", "EJAB", "EJAC", "EJAD", "end"],
-    "subjType2": ["MJSD", "MJSA", "MJSR", "MJSC", "ESSA", "ESSB", "ESSC", "ESSD", "end"],
-    "subjType3": ["MSSD", "MSSA", "MSSR", "MSSC", "EJSA", "EJSB", "EJSC", "EJSD", "end"],
-    "subjType4": ["MJAD", "MJAA", "MJAR", "MJAC", "EJAA", "EJAB", "EJAC", "EJAD", "end"],
+    "subjType1": ["MSAD", "MSAA", "MSAR", "MSAC", "middle", "EJAA", "EJAB", "EJAC", "EJAD", "end"],
+    "subjType2": ["MJSD", "MJSA", "MJSR", "MJSC", "middle", "ESSA", "ESSB", "ESSC", "ESSD", "end"],
+    "subjType3": ["MSSD", "MSSA", "MSSR", "MSSC", "middle", "EJSA", "EJSB", "EJSC", "EJSD", "end"],
+    "subjType4": ["MJAD", "MJAA", "MJAR", "MJAC", "middle", "EJAA", "EJAB", "EJAC", "EJAD", "end"],
 }
+
+
