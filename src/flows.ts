@@ -1,6 +1,7 @@
 export const urlmap = {
     "home": "https://www.cs.technik.fhnw.ch/lostintransition/",
     "start": "https://www.cs.technik.fhnw.ch/lostintransition/envelope/start/",
+    "middle": "https://www.cs.technik.fhnw.ch/lostintransition/envelope/middle/",
     "end": "https://www.cs.technik.fhnw.ch/lostintransition/envelope/end/",
 
     "MSSD": "https://www.cs.technik.fhnw.ch/lostintransition/mortality/SS/demographics.html",
