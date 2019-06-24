@@ -211,3 +211,28 @@ path {
 .survey .radio-label {
     display: inline-block;
 }
+
+
+.scroll-indicator {
+    font-weight: 100;
+    position: fixed;
+    bottom: 40px;
+    left: 47%;
+}
+
+.scroll-indicator::before {
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: -50px;
+    left: 27px;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+    transform: rotate(-45deg);
+}
+
+.hidden {
+    display: none;
+}

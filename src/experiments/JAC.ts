@@ -5,6 +5,7 @@ import {JuxtaposedDirector} from "../lib/Director"
 import {StepDefinition} from "../lib/Definitions"
 import {MorphingChart} from "../lib/MorphingChart"
 import {Form} from "../lib/Form"
+import {scrollIndicator} from "../charts/scrollIndicator"
 
 Promise.all([C(), C1(), D()]).then(charts => {
 
@@ -65,6 +66,7 @@ Promise.all([C(), C1(), D()]).then(charts => {
              kind: "text", name: "first"} 
         ],
     })
+    scrollIndicator()
     f.draw()
          
 })

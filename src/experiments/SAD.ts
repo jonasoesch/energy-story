@@ -4,6 +4,8 @@ import {SuperposedDirector} from "../lib/Director"
 import {StepDefinition} from "../lib/Definitions"
 import {MorphingChart} from "../lib/MorphingChart"
 import {Form} from "../lib/Form"
+import {scrollIndicator} from "../charts/scrollIndicator"
+
 
 Promise.all([ D(), E()]).then(charts => {
 
@@ -44,6 +46,7 @@ Promise.all([ D(), E()]).then(charts => {
              kind: "text", name: "first"} 
         ],
     })
+    scrollIndicator()
     f.draw()
          
 })
