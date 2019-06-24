@@ -50,7 +50,7 @@ export const flows = {
     "subjType1": ["MSAD", "MSAA", "MSAR", "MSAC", "middle", "EJAA", "EJAB", "EJAC", "EJAD", "end"],
     "subjType2": ["MJSD", "MJSA", "MJSR", "MJSC", "middle", "ESSA", "ESSB", "ESSC", "ESSD", "end"],
     "subjType3": ["MSSD", "MSSA", "MSSR", "MSSC", "middle", "EJSA", "EJSB", "EJSC", "EJSD", "end"],
-    "subjType4": ["MJAD", "MJAA", "MJAR", "MJAC", "middle", "EJAA", "EJAB", "EJAC", "EJAD", "end"],
+    "subjType4": ["MJAD", "MJAA", "MJAR", "MJAC", "middle", "ESAA", "ESAB", "ESAC", "ESAD", "end"],
 }
 
 
