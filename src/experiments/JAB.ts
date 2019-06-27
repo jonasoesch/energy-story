@@ -60,7 +60,9 @@ Promise.all([ B(), B1(), C()]).then(charts => {
         top: 1100,
         questions: [
             {question: "In your opinion, what effect or relationship is shown in the data mini-story?",
-             kind: "text", name: "first"} 
+             kind: "text", name: "interpretation"},
+            {question: "How confident do you feel in your understanding of the data mini-story?",
+                kind: "choice", answers: ["Highly confident", "Moderately confident", "Somewhat confident", "Not confident"], name: "confidence"} 
         ],
     })
     scrollIndicator()
