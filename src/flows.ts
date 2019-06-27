@@ -50,20 +50,30 @@ export const urlmap = {
 
 
 export const flows = {
-    "subjType1": ["MSAD", "MSAA", "MSAR", "MSAC", "middle", "EJAA", "EJAB", "EJAC", "EJAD", "end"],
-    "subjType2": ["MJSD", "MJSA", "MJSR", "MJSC", "middle", "ESSA", "ESSB", "ESSC", "ESSD", "end"],
-    "subjType3": ["MSSD", "MSSA", "MSSR", "MSSC", "middle", "EJSA", "EJSB", "EJSC", "EJSD", "end"],
-    "subjType4": ["MJAD", "MJAA", "MJAR", "MJAC", "middle", "ESAA", "ESAB", "ESAC", "ESAD", "end"],
+    "subjType1": ["start", "MSAD", "MSAA", "MSAR", "MSAC", "middle", "EJAA", "EJAB", "EJAC", "EJAD", "end"],
+    "subjType2": ["start", "MJSD", "MJSA", "MJSR", "MJSC", "middle", "ESSA", "ESSB", "ESSC", "ESSD", "end"],
+    "subjType3": ["start", "MSSD", "MSSA", "MSSR", "MSSC", "middle", "EJSA", "EJSB", "EJSC", "EJSD", "end"],
+    "subjType4": ["start", "MJAD", "MJAA", "MJAR", "MJAC", "middle", "ESAA", "ESAB", "ESAC", "ESAD", "end"],
 
-    "et1": ["MJAD", "MJAA", "MJSR", "MJSC", "ESAA", "ESAB", "ESSC", "ESSD", "thanks"],
-    "et2": ["MJSD", "MJSA", "MJAR", "MJAC", "ESSA", "ESSB", "ESAC", "ESAD", "thanks"],
-    "et3": ["MSAD", "MSAA", "MSSR", "MSSC", "EJAA", "EJAB", "EJSC", "EJSD", "thanks"],
-    "et4": ["MSSD", "MSSA", "MSAR", "MSAC", "EJSA", "EJSB", "EJAC", "EJAD", "thanks"],
-    "et5": ["EJAA", "EJAB", "EJSC", "EJSD", "MSAD", "MSAA", "MSSR", "MSSC", "thanks"],
-    "et6": ["EJSA", "EJSB", "EJAC", "EJAD", "MSSD", "MSSA", "MSAR", "MSAC", "thanks"],
-    "et7": ["ESAA", "ESAB", "ESSC", "ESSD", "MJAD", "MJAA", "MJSR", "MJSC", "thanks"],
-    "et8": ["ESSA", "ESSB", "ESAC", "ESAD", "MJSD", "MJSA", "MJAR", "MJAC", "thanks"],
+    "et1": ["et", "MJAD", "MJAA", "MJSR", "MJSC", "ESAA", "ESAB", "ESSC", "ESSD", "thanks"],
+    "et2": ["et", "MJSD", "MJSA", "MJAR", "MJAC", "ESSA", "ESSB", "ESAC", "ESAD", "thanks"],
+    "et3": ["et", "MSAD", "MSAA", "MSSR", "MSSC", "EJAA", "EJAB", "EJSC", "EJSD", "thanks"],
+    "et4": ["et", "MSSD", "MSSA", "MSAR", "MSAC", "EJSA", "EJSB", "EJAC", "EJAD", "thanks"],
+    "et5": ["et", "EJAA", "EJAB", "EJSC", "EJSD", "MSAD", "MSAA", "MSSR", "MSSC", "thanks"],
+    "et6": ["et", "EJSA", "EJSB", "EJAC", "EJAD", "MSSD", "MSSA", "MSAR", "MSAC", "thanks"],
+    "et7": ["et", "ESAA", "ESAB", "ESSC", "ESSD", "MJAD", "MJAA", "MJSR", "MJSC", "thanks"],
+    "et8": ["et", "ESSA", "ESSB", "ESAC", "ESAD", "MJSD", "MJSA", "MJAR", "MJAC", "thanks"],
+
+    "type1": ["start", "MJSD", "MJSA", "MJSR", "MJSC", "middle", "EJAA", "EJAB", "EJAC", "EJAD", "end"],
+    "type2": ["start", "MJAD", "MJAA", "MJAR", "MJAC", "middle", "EJSA", "EJSB", "EJSC", "EJSD", "end"],
+    "type3": ["start", "MSSD", "MSSA", "MSSR", "MSSC", "middle", "ESAA", "ESAB", "ESAC", "ESAD", "end"],
+    "type4": ["start", "MSAD", "MSAA", "MSAR", "MSAC", "middle", "ESSA", "ESSB", "ESSC", "ESSD", "end"],
+    "type5": ["start", "EJSA", "EJSB", "EJSC", "EJSD", "middle", "MJAD", "MJAA", "MJAR", "MJAC", "end"],
+    "type6": ["start", "EJAA", "EJAB", "EJAC", "EJAD", "middle", "MJSD", "MJSA", "MJSR", "MJSC", "end"],
+    "type7": ["start", "ESSA", "ESSB", "ESSC", "ESSD", "middle", "MSAD", "MSAA", "MSAR", "MSAC", "end"],
+    "type8": ["start", "ESAA", "ESAB", "ESAC", "ESAD", "middle", "MSSD", "MSSA", "MSSR", "MSSC", "end"],
 }
+
 
 
 
