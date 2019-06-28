@@ -2,6 +2,7 @@ export const urlmap = {
     "home": "https://www.cs.technik.fhnw.ch/lostintransition/",
     "start": "https://www.cs.technik.fhnw.ch/lostintransition/envelope/start/",
     "middle": "https://www.cs.technik.fhnw.ch/lostintransition/envelope/middle/",
+    "survey": "https://www.cs.technik.fhnw.ch/lostintransition/envelope/survey/",
     "end": "https://www.cs.technik.fhnw.ch/lostintransition/envelope/end/",
     
     "et": "https://www.cs.technik.fhnw.ch/lostintransition/envelope/et/",
