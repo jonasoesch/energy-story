@@ -64,14 +64,14 @@ export const flows = {
     "et7": ["et", "ESAA", "ESAB", "ESSC", "ESSD", "MJAD", "MJAA", "MJSR", "MJSC", "thanks"],
     "et8": ["et", "ESSA", "ESSB", "ESAC", "ESAD", "MJSD", "MJSA", "MJAR", "MJAC", "thanks"],
 
-    "type1": ["start", "MJSD", "MJSA", "MJSR", "MJSC", "middle", "EJAA", "EJAB", "EJAC", "EJAD", "end"],
-    "type2": ["start", "MJAD", "MJAA", "MJAR", "MJAC", "middle", "EJSA", "EJSB", "EJSC", "EJSD", "end"],
-    "type3": ["start", "MSSD", "MSSA", "MSSR", "MSSC", "middle", "ESAA", "ESAB", "ESAC", "ESAD", "end"],
-    "type4": ["start", "MSAD", "MSAA", "MSAR", "MSAC", "middle", "ESSA", "ESSB", "ESSC", "ESSD", "end"],
-    "type5": ["start", "EJSA", "EJSB", "EJSC", "EJSD", "middle", "MJAD", "MJAA", "MJAR", "MJAC", "end"],
-    "type6": ["start", "EJAA", "EJAB", "EJAC", "EJAD", "middle", "MJSD", "MJSA", "MJSR", "MJSC", "end"],
-    "type7": ["start", "ESSA", "ESSB", "ESSC", "ESSD", "middle", "MSAD", "MSAA", "MSAR", "MSAC", "end"],
-    "type8": ["start", "ESAA", "ESAB", "ESAC", "ESAD", "middle", "MSSD", "MSSA", "MSSR", "MSSC", "end"],
+    "type1": ["start", "MJSD", "MJSA", "MJSR", "MJSC", "middle", "EJAA", "EJAB", "EJAC", "EJAD", "survey", "end"],
+    "type2": ["start", "MJAD", "MJAA", "MJAR", "MJAC", "middle", "EJSA", "EJSB", "EJSC", "EJSD", "survey", "end"],
+    "type3": ["start", "MSSD", "MSSA", "MSSR", "MSSC", "middle", "ESAA", "ESAB", "ESAC", "ESAD", "survey", "end"],
+    "type4": ["start", "MSAD", "MSAA", "MSAR", "MSAC", "middle", "ESSA", "ESSB", "ESSC", "ESSD", "survey", "end"],
+    "type5": ["start", "EJSA", "EJSB", "EJSC", "EJSD", "middle", "MJAD", "MJAA", "MJAR", "MJAC", "survey", "end"],
+    "type6": ["start", "EJAA", "EJAB", "EJAC", "EJAD", "middle", "MJSD", "MJSA", "MJSR", "MJSC", "survey", "end"],
+    "type7": ["start", "ESSA", "ESSB", "ESSC", "ESSD", "middle", "MSAD", "MSAA", "MSAR", "MSAC", "survey", "end"],
+    "type8": ["start", "ESAA", "ESAB", "ESAC", "ESAD", "middle", "MSSD", "MSSA", "MSSR", "MSSC", "survey", "end"],
 }
 
 
