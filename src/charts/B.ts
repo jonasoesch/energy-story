@@ -50,21 +50,21 @@ export function B():Promise<any> {
                     { "name": "wind", "color": "#61A8B0",
                         annotations: [
                             {name: "Wind", offset: {left:0, top: -10}, class: "outside"},
-                            {name: "3%", anchor: "end", offset: {left:-50, top: 5}, class: "wind"}
+                            {name: "5%", anchor: "end", offset: {left:-50, top: 5}, class: "wind"}
                         ]
                     } ,
                     { "name": "hydro", "color": "#007B88",
                         annotations: [
                         {name: "Hydropower", offset: {top: -6}},
                         {name: "3%", anchor: "start", offset: {left:20, top: 5}, class: "hydro"},
-                        {name: "3%", anchor: "end", offset: {left:-50, top: 10}, class: "hydro"}
+                        {name: "5%", anchor: "end", offset: {left:-50, top: 10}, class: "hydro"}
                         ]
                     } ,
                     { "name": "biomass", "color": "#53A353",
                         annotations: [
                         {name: "Biomass", offset: {top: 10}},
                         {name: "3%", anchor: "start", offset: {left:20, top: 5}, class: "biomass"},
-                        {name: "6%", anchor: "end", offset: {left:-50, top: 20}, class: "biomass"}
+                        {name: "6%", anchor: "end", offset: {left:-50, top: 12}, class: "biomass"}
                         ]
                     },
                     { "name": "nuclear", "color": "#9AA353",
@@ -74,25 +74,25 @@ export function B():Promise<any> {
                         {name: "9%", anchor: "end", offset: {left:-50, top: 30}, class: "nuclear"}
                         ]
                     } ,
+                    { "name": "crude oil", "color": "#724E3E", 
+                    annotations: [
+                        {name: "Oil", offset: {top: 40}},
+                        {name: "17%", anchor: "start", offset: {left:20, top: 50}, class: "oil"},
+                        {name: "17%", anchor: "end", offset: {left:-50, top: 40}, class: "oil"}
+                    ]
+                    } ,
                     { "name": "coal", "color": "#A47351",
                     annotations: [
                         {name: "Coal", offset: {top: 50}},
                         {name: "33%", anchor: "start", offset: {left:20, top: 90}, class: "coal"},
-                        {name: "18%", anchor: "end", offset: {left:-50, top: 50}, class: "coal"}
-                    ]
-                    } ,
-                    { "name": "crude oil", "color": "#724E3E", 
-                    annotations: [
-                        {name: "Oil", offset: {top: 60}},
-                        {name: "17%", anchor: "start", offset: {left:20, top: 50}, class: "oil"},
-                        {name: "24%", anchor: "end", offset: {left:-50, top: 60}, class: "oil"}
+                        {name: "21%", anchor: "end", offset: {left:-50, top: 50}, class: "coal"}
                     ]
                     } ,
                     { "name": "natural gas", "color": "#969696",
                     annotations: [
                         {name: "Natural gas", offset: {top: 80}},
                         {name: "31%", anchor: "start", offset: {left:20, top: 80}, class: "gas"},
-                        {name: "38%", anchor: "end", offset: {left:-50, top: 85}, class: "gas"}
+                        {name: "35%", anchor: "end", offset: {left:-50, top: 85}, class: "gas"}
                     ]
                     } ,
                 ]
