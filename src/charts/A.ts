@@ -22,7 +22,7 @@ export function A():Promise<any> {
                 {
                     "name": "y",
                     "field": "energy",
-                    "domain": [0, 40000],
+                    "domain": [0, 30000],
                     annotations: [{name: "Energy production in billion BTU", offset: {left: -10, top: 0}}]
                 },
                 {
