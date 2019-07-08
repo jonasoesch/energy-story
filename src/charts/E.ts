@@ -22,7 +22,7 @@ export function E():Promise<any> {
                 {
                     "name": "y",
                     "field": "lcoe",
-                    "domain": [0, 180],
+                    "domain": [0, 70],
                     annotations: [{name: "USD per million BTU", offset: {left: 10, top: 10}}]
                 },
                 {

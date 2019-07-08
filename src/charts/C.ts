@@ -8,7 +8,7 @@ export function C():Promise<any> {
         let dd:any = data.map(d => {
             return {
                 year: new Date(Date.parse(d.year)),
-                energy: parseFloat(d.energy),
+                share: parseFloat(d.share),
                 state: d.state
             }})
 
@@ -22,9 +22,10 @@ export function C():Promise<any> {
             axes: [
                 {
                     "name": "y",
-                    "field": "energy",
-                    "domain": [0, 250],
-                    annotations: [{name: "Wind energy production in billion BTU", offset: {left: 8, top: 0}}]
+                    "field": "share",
+                    "domain": [0, 0.5],
+                    annotations: [{name: "Share of wind energy in total energy production", offset: {left: 8, top: 0}}],
+                    "tickFormat": ".0%"
                 },
                 {
                     "name": "x",
@@ -53,16 +54,16 @@ export function C():Promise<any> {
                         annotations: [{name: "Kansas"}]
                     },
                     { "name": "CA", "color": "#A45FC2",
-                        annotations: [{name: "California", offset: {top: -10}}]
+                        annotations: [{name: "California", offset: {top: -5}}]
                     },
                     { "name": "IL", "color": "#C859C2",
-                        annotations: [{name: "Illinois", offset: {top: -1}}]
+                        annotations: [{name: "Illinois", offset: {top: 3}}]
                     },
                     { "name": "ND", "color": "#D44C6C",
                         annotations: [{name: "North Dakota", offset: {top: 3}}]
                     },
                     { "name": "MN", "color": "#861759",
-                        annotations: [{name: "Minnesota", offset: {top: 15}}]
+                        annotations: [{name: "Minnesota", offset: {top: 0}}]
                     },
                 ]
             },

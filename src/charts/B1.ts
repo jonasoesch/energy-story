@@ -41,9 +41,9 @@ export function B1():Promise<any> {
                 "characters": [
                     {name: "geothermal", color: "transparent"},
                     {name: "solar", color: "transparent"},
-                    { "name": "wind", "color": "#69C0C9",
+                    { "name": "wind", "color": "#61A8B0",
                         annotations: [
-                            {name: "Wind", offset: {left:0, top: -10}, class: "outside"},
+                            {name: "Wind", offset: {left:0, top: -3}, class: "outside"},
                         ]
                     } ,
                 ]
