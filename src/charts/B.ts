@@ -23,7 +23,7 @@ export function B():Promise<any> {
                     "name": "y",
                     "field": "share",
                     "domain": [0, 100],
-                    annotations: [{name: "Share of each energy source", offset: {top: -40, left: 0}}]
+                    annotations: [{name: "Percentage of power produced from each energy source", offset: {top: -40, left: 0}}]
                 },
                 {
                     "name": "x",

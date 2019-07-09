@@ -14,6 +14,7 @@ function devProd(development, production) {
 module.exports = {
     entry: {
         demo:  './src/index.ts',
+        initial: './src/experiments/initial.ts',
         JAA:  './src/experiments/JAA.ts',
         JAB:  './src/experiments/JAB.ts',
         JAC:  './src/experiments/JAC.ts',
