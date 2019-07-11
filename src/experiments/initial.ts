@@ -4,6 +4,7 @@ import {StepDefinition} from "../lib/Definitions"
 import {MorphingChart} from "../lib/MorphingChart"
 import {Form} from "../lib/Form"
 import {scrollIndicator} from "../charts/scrollIndicator"
+import {initialQuestions} from "../../../questions"
 
 Promise.all([ A()]).then(charts => {
 
@@ -20,12 +21,7 @@ Promise.all([ A()]).then(charts => {
         currentPage: d.name,
         logger: d.logger,
         top: 0,
-        questions: [
-            {question: "In your opinion, what effect or relationship is shown in the data mini-story?",
-             kind: "text", name: "interpretation"},
-            {question: "How confident do you feel in your understanding of the data mini-story?",
-                kind: "choice", answers: ["Highly confident", "Moderately confident", "Somewhat confident", "Not confident"], name: "confidence"} 
-        ],
+        questions: initialQuestions
     })
     scrollIndicator();
     f.draw()
