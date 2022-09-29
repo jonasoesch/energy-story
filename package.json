@@ -15,7 +15,7 @@
         "webpack-dev-server": "^3.1.5"
     },
     "dependencies": {
-        "d3": "^5.5.0"
+        "d3": "^7.6.1"
     },
     "scripts": {
         "start": "NODE_ENV=development webpack-dev-server",
